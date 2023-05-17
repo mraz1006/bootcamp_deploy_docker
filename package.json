@@ -1,0 +1,32 @@
+{
+  "name": "bootcamp_deploy_container",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "test:first_docker_image": "jest --testNamePattern first-docker-image",
+    "lint:check": "eslint --ext .js,.ts __tests__",
+    "lint:fix": "eslint --ext .js,.ts --fix __tests__",
+    "format:check": "prettier --check '__tests__/**/*.{js,ts}'",
+    "format:fix": "prettier --write '__tests__/**/*.{js,ts}'"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "@types/dockerode": "^3.3.16",
+    "@types/jest": "^29.5.1",
+    "@types/node": "^18.16.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "dockerode": "^3.3.5",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
